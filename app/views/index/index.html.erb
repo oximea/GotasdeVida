@@ -1,0 +1,312 @@
+<div class="header" id="head">
+  <div class="header-banner">
+    <div class="container">
+      <div class="header-banner-head">
+        <div class="logo">
+          <a href="#"> <%= image_tag("logo3.png",class: "img-responsive" ) %>
+           </a>
+        </div>
+        <div class="top-menu">
+          <span class="menu"> </span>
+          <ul>
+            <li><a href="#home" class="scroll">Inicio</a></li>
+            <li><a href="#Services" class="scroll">Beneficios</a></li>
+            <li><a href="#people" class="scroll">Conócenos</a></li>
+            <li><a href="#gifts" class="scroll">Premios</a></li>
+            <li><a href="#" class="scroll">Iniciar Sesión</a></li>
+            <div class="clearfix"></div>
+          </ul>
+        </div>
+        <!-- script-for-menu -->
+        <script>
+            $("span.menu").click(function(){
+                $(".top-menu ul").slideToggle("slow" , function(){
+                });
+            });
+        </script>
+        <!-- script-for-menu -->
+        <div class="clearfix"></div>
+      </div>
+      <div class="clearfix"></div>
+      <div class="header-banner-info wow fadeIn" data-wow-delay="1s" id="home">
+        <%= image_tag("bannerinfo2.png",class: "img-responsive" ) %>
+
+        <p>Regístrate como donador</p>
+        <a href="#Services" class="scroll">
+          <%= image_tag("down-arrow.png" ) %>
+
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="content">
+  <div class="row services-section" id="Services">
+    <div class="container">
+      <div class="services-section-head text-center">
+        <div class="drop"></div>
+        <h3>¿Qué es Gotas de Vida?</h3>
+        <p>Una plataforma que reúne Donadores de Sangre para atender la problematica de la donación voluntaria de sangre en México. Encuentra donadores de sangre cuando más lo necesitas</p>
+      </div>
+      <div class="row services-section-grids text-center">
+        <div class="col-md-3">
+          <div class="services-section-grid">
+            <a href="registrod.html"><i class="s-icon1"></i>
+              <h4>Regístrate</h4></a>
+            <p>Regístrate como donador de sangre en la plataforma y comienza a salvar vidas.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="services-section-grid">
+            <a href="board.html"><i class="s-icon2"></i>
+              <h4>Dona sangre</h4></a>
+            <p>Espera a ser contactado ó busca una persona a la cual desees ayudar.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="services-section-grid">
+            <i class="s-icon3"></i>
+            <h4><a href="#">Salvas 3 vidas y Obtén puntos</a></h4>
+            <p>Por cada donación estas salvando 3 vidas y además ganas puntos en la plataforma.</p>
+          </div>
+        </div>
+        <!--<div class="col-md-3">
+            <div class="services-section-grid">
+                <i class="s-icon4"> </i>
+                <h4><a href="#">Gana Puntos</a></h4>
+                <p>Cum  sociis  natoque  penatibus  et magnis disurient montes.</p>
+            </div>
+        </div>-->
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="clearfix"></div>
+  <div class="content-banner1" id="about-us">
+    <div class="content-banner1-info text-center">
+      <div class="drop"></div>
+      <h3>¿Sabías que por cada donación de sangre estas salvando a 3 personas?</h3>
+      <p>
+      <div class="answer">
+        <input type="submit" value="Si" class="buttonyes">
+        <input type="submit" value="No" class="buttonno">
+      </div>
+      </p>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+  <div class="row team-section" id="people">
+    <div class="container">
+      <div class="people-section-head text-center">
+        <div class="drop"></div>
+        <h3>Conócenos</h3>
+        <p>Ellos ya forman parte de la comunidad. Tú también puedes formar parte de nostros ¿Qué esperas?</p>
+      </div>
+      <div class="row team-section-grids text-center people">
+        <%= image_tag("people/people1.jpg" ) %>
+        <%= image_tag("people/people2.jpg" ) %>
+        <%= image_tag("people/people3.jpg" ) %>
+        <%= image_tag("people/people4.jpg" ) %>
+        <%= image_tag("people/people5.jpg" ) %>
+        <%= image_tag("people/people6.jpg" ) %>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="clearfix"></div>
+  <div class="content-banner1" id="about-us">
+    <div class="content-banner1-info text-center">
+      <div class="drop"></div>
+      <h3>¿Has donado sangre alguna vez?</h3>
+      <p>
+      <div class="answer">
+        <input type="submit" value="Si" class="buttonyes">
+        <input type="submit" value="No" class="buttonno">
+      </div>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+<div class="row blog-section" id="gifts">
+  <div class="container">
+    <div class="gifts-section-head text-center">
+      <div class="drop"></div>
+      <h3>Premios</h3>
+      <p>Obtén puntos y cámbialos por diferentes productos y/o servicios.</p>
+    </div>
+    <div class="row blog-section-grids">
+      <div class="col-md-4">
+        <div class="blog-section-grid">
+          <%= image_tag("gifts/SF1.jpg", class:"img-responsive" ) %>
+
+          <ul class="links">
+            <li class="left">
+              <span class="icon_text">Sesión Fotográfica</span>
+            </li>
+            <li class="right">
+              <a href="#">150 puntos</a>
+            </li>
+            <div class="clearfix"></div>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="blog-section-grid">
+          <%= image_tag("gifts/cinepolis1.jpg", class:"img-responsive" ) %>
+           <ul class="links">
+            <li class="left">
+              <span class="icon_text">2 Entradas c/película</span>
+            </li>
+            <li class="right">
+              <a href="#">80 puntos</a>
+            </li>
+            <div class="clearfix"></div>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="blog-section-grid">
+          <%= image_tag("gifts/caffenio1.jpg", class:"img-responsive" ) %>
+          <ul class="links">
+            <li class="left">
+              <span class="icon_text">Café Negro + Muffin</span>
+            </li>
+            <li class="right">
+              <a href="#">12 puntos</a>
+            </li>
+            <div class="clearfix"></div>
+          </ul>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</div>
+<div class="clearfix"></div>
+<div class="content-banner3">
+  <div class="content-banner3-info">
+    <div class="container">
+      <div class="content-banner3-info-head text-center">
+        <h4>Mantente al tanto del proyecto</h4>
+      </div>
+      <div class="col-md-6-1 span-padding wow fadeInLeft" data-wow-delay="0.5s">
+        <div class="content-banner3-info-leftgrid">
+          <p>Redes sociales: </p>
+          <a href="#"><i class="fb"></i></a>
+          <a href="#"><i class="tw"></i></a>
+        </div>
+      </div>
+      <div class="oo">ó</div>
+      <div class="col-md-6 wow fadeInRight" data-wow-delay="0.5s">
+        <div class="content-banner3-info-rightgrid">
+          <form>
+            <input type="text" class="text" value="tu dirección e-mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'tu dirección e-mail';}">
+            <input type="submit" value="subscribir">
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</div>
+<div class="clearfix"></div>
+<div class="footer">
+  <div class="row contact-section" id="contacts">
+    <div class="container">
+      <div class="contact-section-head text-center">
+        <div class="drop"></div>
+        <h3>¿Dudas o sugerencias?</h3>
+        <p>Si tienes alguna duda, comentario o sugerencia, te agradeceríamos nos la hicieras llegar a través del siguiente formulario, o bien utilizando cualquiera de nuestras redes sociales.</p>
+      </div>
+      <div class="row contact-section-grids">
+
+        <div class="col-md-12">
+          <div class="contact-section-rightgrid">
+            <form>
+              <input type="text" value=""><span>Nombre</span>
+              <input type="text" value=""><span>E-mail</span>
+              <textarea></textarea>
+              <div class="button">
+                <input type="submit" value="Enviar">
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="clearfix"></div>
+  <div class="content-banner2">
+    <div class="container">
+      <div class="some-happy-clients">
+        <div class="some-happy-clients-head text-center">
+          <div class="drop"></div>
+          <h3>Patrocinadores</h3>
+        </div>
+        <div class="some-happy-clients-list text-center">
+          <div class="clients">
+            <ul id="flexiselDemo3">
+              <li> <%= image_tag("sponsors/dydco_Logo.png", alt: 'Dydco logo' ) %></li>
+              <li> <%= image_tag("sponsors/logoErick.png" ) %></li>
+              <li> <%= image_tag("sponsors/logoCITTI.png" ) %></li>
+              <li> <%= image_tag("sponsors/logoIncubadora.JPG" )%></li>
+
+            </ul>
+            <script type="text/javascript">
+                $(window).load(function() {
+                    $("#flexiselDemo3").flexisel({
+                        visibleItems: 4,
+                        animationSpeed: 1000,
+                        autoPlay: true,
+                        autoPlaySpeed: 3000,
+                        pauseOnHover: true,
+                        enableResponsiveBreakpoints: true,
+                        responsiveBreakpoints: {
+                            portrait: {
+                                changePoint:480,
+                                visibleItems: 1
+                            },
+                            landscape: {
+                                changePoint:640,
+                                visibleItems: 2
+                            },
+                            tablet: {
+                                changePoint:768,
+                                visibleItems: 3
+                            }
+                        }
+                    });
+                });
+            </script>
+            <%= javascript_include_tag 'jquery.flexisel' %>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="clearfix"></div>
+  <p class="copy">&copy; 2014 Gotas de vida</p>
+  <script type="text/javascript">
+      $(document).ready(function() {
+          /*
+           var defaults = {
+           containerID: 'toTop', // fading element id
+           containerHoverID: 'toTopHover', // fading element hover id
+           scrollSpeed: 1200,
+           easingType: 'linear'
+           };
+           */
+          $().UItoTop({ easingType: 'easeOutQuart' });
+      });
+  </script>
+  <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+</div>
